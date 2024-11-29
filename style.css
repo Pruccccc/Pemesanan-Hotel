@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+  background: url(header.jpg) center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 4rem 0;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: moccasin;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo a {
+  text-decoration: none;
+  color: chocolate;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu li {
+  margin: 0.1rem;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #ffcc00;
+}
+
+/* Main Section Styles */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Paket Best Seller Styles */
+#best-seller {
+  text-align: center; /* Memusatkan judul */
+  margin: 2rem 0;
+}
+
+#best-seller h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Video Hotel Styles */
+#video-promosi {
+  text-align: center; /* Memusatkan judul */
+  margin: 2rem 0;
+}
+
+#video-promosi h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Daftar Harga Kamar Styles */
+#daftar-harga {
+  text-align: center; /* Memusatkan judul */
+  margin: 2rem 0;
+}
+
+#daftar-harga h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+#daftar-harga table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+#daftar-harga th,
+#daftar-harga td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+#daftar-harga th {
+  background-color: #f4a460;
+  color: white;
+}
+
+#daftar-harga td {
+  background-color: #fff8dc;
+}
+
+/* Tentang Kami Section */
+#tentang-kami {
+  margin: 2rem 0;
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tentang-kami h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+#tentang-kami p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Mengatur tampilan umum halaman */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+}
+
+h3 {
+  text-align: center;
+  color: #333;
+}
+
+/* Mengatur tampilan tabel form pemesanan */
+table {
+  margin: 0 auto;
+  width: 50%;
+  border-collapse: collapse;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table td {
+  padding: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  margin: 0 10px;
+}
+
+/* Mengatur tampilan tombol */
+.button-group {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button[type="reset"] {
+  background-color: #f44336;
+}
+
+button[type="reset"]:hover {
+  background-color: #e53935;
+}
+
+button[type="submit"] {
+  background-color: #008cba;
+}
+
+button[type="submit"]:hover {
+  background-color: #007bb5;
+}
+
+/* Mengatur tampilan responsif untuk layar kecil */
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+  }
+
+  input[type="text"],
+  select {
+    width: 100%;
+  }
+
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
